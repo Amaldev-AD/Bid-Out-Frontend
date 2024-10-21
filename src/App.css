@@ -1,0 +1,57 @@
+
+.signup_body{
+ 
+
+box-shadow:  16px 16px 31px #afafaf,
+             -16px -16px 31px #ffffff;
+}
+.login_body{
+    
+background: #ffffff;
+box-shadow:  10px 10px 28px #cfcfcf,
+             -10px -10px 28px #ffffff;
+}
+
+.submit_commission_body{
+    
+background: #ffffff;
+box-shadow:  10px 10px 28px #cfcfcf,
+             -10px -10px 28px #ffffff;
+    }
+
+/* keyframe for fadeInDown animation */
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.vert_move{
+    animation: mover 1s infinite alternate ease-in-out;
+  }
+.horiz_move{
+    animation: mover-horizontal 1s infinite alternate ease-in-out;
+}
+
+/* up down animation */
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+@keyframes mover-horizontal {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
